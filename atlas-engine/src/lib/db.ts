@@ -45,6 +45,7 @@ export async function logOutcome(
   outcome: 'win' | 'loss',
   matchType: 'exact' | 'inferred',
   similarity: number,
+  lossReason?: string,
 ): Promise<LearningRecord> {
   const STEP = 0.05;
   const MIN_WEIGHT = 0.1;
